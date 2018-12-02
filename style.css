@@ -1,0 +1,41 @@
+html {
+  --cell-dimension: 5vw;
+  --x-rep: 5;
+  --y-rep: 9;
+}
+
+#input-board, #output-board {
+  margin: 0 auto 20px auto;
+
+  padding-top: 5px;
+  padding-left: 5px;
+
+  width: calc((var(--x-rep)*(var(--cell-dimension) + 5px)) + 11px);
+  height: calc((var(--y-rep)*(var(--cell-dimension) + 5px)) + 11px);
+
+  background-color: #ebebeb;
+  border: solid 3px #3b3b3b;
+}
+.container {
+  margin-top: 10px;
+}
+.col { 
+  text-align: center;
+}
+.cell {
+  width: var(--cell-dimension);
+  height: var(--cell-dimension);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  border: solid 3px #3b3b3b;
+
+  display: inline-block;
+}
+.on {
+  background-color: #4e95ff;
+}
+ button {
+  min-width: 130px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
